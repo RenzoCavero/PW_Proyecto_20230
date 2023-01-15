@@ -1,0 +1,50 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    color: white;
+    font-family: 'calibri';
+}
+
+header{
+    background: url('Fondo.jpg');
+    height: 1000px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+section{
+    min-width: 1000px;
+    margin: auto;
+    padding: 20px;
+}
+
+section h1{
+    font-size: 70px;
+    text-align: center;
+}
+
+.Inicio{
+    text-align: center;
+}
+
+.Inicio p{
+    font-size: 70px;
+    font-weight: bold;
+    margin: 1em 0;
+}
+
+.Inicio a{
+    color: White;
+    text-decoration: none;
+    background-color:orange;
+    padding: 4px 20px;
+    border-radius: 30px;
+    font-size: 20px;
+    margin: 10px;
+
+
+}
