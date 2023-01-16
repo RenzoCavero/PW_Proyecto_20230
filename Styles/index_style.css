@@ -10,7 +10,7 @@ body{
 }
 
 header{
-    background: url('Fondo.jpg');
+    background: url(../Images/bg.jpg);
     height: 1000px;
     background-size: cover;
     background-repeat: no-repeat;
@@ -23,8 +23,9 @@ section{
 }
 
 section h1{
-    font-size: 70px;
+    font-size: 100px;
     text-align: center;
+    color: black;
 }
 
 .Inicio{
@@ -32,19 +33,24 @@ section h1{
 }
 
 .Inicio p{
-    font-size: 70px;
+    font-size: 50px;
     font-weight: bold;
     margin: 1em 0;
+    color: black;
+    background-color: whitesmoke;
 }
 
 .Inicio a{
     color: White;
     text-decoration: none;
-    background-color:orange;
+    background-color:orangered;
     padding: 4px 20px;
-    border-radius: 30px;
-    font-size: 20px;
+    border-radius: 25px;
+    font-size: 25px;
     margin: 10px;
-
-
 }
+
+.Inicio a:hover {
+    cursor: pointer;
+    color:Black;
+  }
