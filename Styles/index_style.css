@@ -54,3 +54,55 @@ section h1{
     cursor: pointer;
     color:Black;
   }
+
+.Ofertas{
+    width: 760px;
+    height: 360px;
+    background-color: whitesmoke;
+    color: black;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, 25%);
+    box-sizing: border-box;
+    border-radius: 10px;
+    text-align: center;
+
+}
+
+.Ofertas h2{
+    font-size: 30px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+    background-color: whitesmoke;
+    color: black;
+}
+
+.Ofertas img{
+    width: 250px;
+    height: 250px;
+    border-radius: 5px;
+}
+
+.VerMás{
+    font-size: 25px;
+    text-align: center;
+    background-color: orangered;
+    width: 440px;
+    height: 35px;
+    top: 110%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, 80%);
+    border-radius: 20px;
+}
+
+.VerMás a{
+    text-decoration: none;
+    color: white;
+}
+
+.VerMás a:hover {
+    cursor: pointer;
+    color:black;
+  }
