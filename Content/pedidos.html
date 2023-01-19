@@ -1,0 +1,98 @@
+<!-- 
+Online HTML, CSS and JavaScript editor to run code online.
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="/Styles/carrito_platos.css">
+  <title>Browser</title>
+</head>
+
+<body>
+<table>
+  <thead>
+    <tr>
+      <th>Restaurante</th>
+      <th>Plato</th>
+      <th>Precio</th>
+      <th>Agregar al carrito</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Bembos</td>
+      <td>Lomo Saltado</td>
+      <td>S/20</td>
+      <td><button onclick="addToCart('Lomo Saltado', 'Bembos', 20)">Agregar al carrito</button></td>
+    </tr>
+    <tr>
+      <td>Restaurante Italiano Francesco</td>
+      <td>Cesar Salad</td>
+      <td>S/12.50</td>
+      <td><button onclick="addToCart('Latte', 'Starbucks', 12.50)">Agregar al carrito</button></td>
+    </tr>
+    <tr>
+      <td>Pizza Hut</td>
+      <td>Pizza</td>
+      <td>S/30</td>
+      <td><button onclick="addToCart('Pizza', 'Pizza Hut', 30)">Agregar al carrito</button></td>
+    </tr>
+  </tbody>
+</table>
+
+<table id="cart-table"></table>
+
+<script>
+var cart = {};
+
+function addToCart(item, restaurant, price) {
+    if (cart[item]) {
+        cart[item].quantity++;
+    } else {
+        cart[item] = {
+            restaurant: restaurant,
+            price: price,
+            quantity: 1
+        };
+    }
+    displayCart();
+}
+
+function displayCart() {
+  var cartTable = document.getElementById("cart-table");
+  cartTable.innerHTML = "";
+  var total = 0;
+  cartTable.innerHTML += "<tr><th>Nombre del plato</th><th>Restaurante</th><th>Precio</th><th>Cantidad</th></tr>";
+  for (var item in cart) {
+    var cartItem = cart[item];
+    total += cartItem.price * cartItem.quantity;
+    cartTable.innerHTML += "<tr><td>" + item + "</td><td>" + cartItem.restaurant + "</td><td>" + cartItem.price + "</td><td>"+cartItem.quantity+"</td></tr>";
+  }
+  cartTable.innerHTML += "<tr><td>Total</td><td></td><td></td><td>" + total + "</td></tr>";
+}
+</script>
+    <button onclick="placeOrder()">Realizar pedido</button>
+
+<script>
+    function placeOrder() {
+    var verificationCode = generateVerificationCode();
+    alert("Pedido recibido! Código de verificación: " + verificationCode);
+    cart = {};
+    displayCart();
+}
+
+function generateVerificationCode() {
+    // Generar un código de verificación al azar
+    var code = "";
+    var possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
+    for (var i = 0; i < 6; i++) {
+        code += possible.charAt(Math.floor(Math.random() * possible.length));
+    }
+    return code;
+}
+</script>
+</body>
+</html>
