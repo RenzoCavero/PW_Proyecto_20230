@@ -46,14 +46,14 @@ Online HTML, CSS and JavaScript editor to run code online.
 <table id="cart-table"></table>
 
 <script>
-var cart = {};
+var cart = {}; // empty array, global variable (var)
 
 function addToCart(item, restaurant, price) {
-    if (cart[item]) {
-        cart[item].quantity++;
-    } else {
-        cart[item] = {
-            restaurant: restaurant,
+    if (cart[item]) { // Si el item se encuentra en el carrito...
+        cart[item].quantity++; // Se aumenta en cantidad
+    } else { // sino...
+        cart[item] = {  // Se le agrega al carrito
+            restaurant: restaurant, // se anotan los datos
             price: price,
             quantity: 1
         };
@@ -68,7 +68,8 @@ function displayCart() {
   cartTable.innerHTML += "<tr><th>Nombre del plato</th><th>Restaurante</th><th>Precio</th><th>Cantidad</th></tr>";
   for (var item in cart) {
     var cartItem = cart[item];
-    total += cartItem.price * cartItem.quantity;
+    total += cartItem.price * cartItem.quantity; // total += precio * cantidad
+    // abajo colocamos el item, restaurante, precio y cantidad
     cartTable.innerHTML += "<tr><td>" + item + "</td><td>" + cartItem.restaurant + "</td><td>" + cartItem.price + "</td><td>"+cartItem.quantity+"</td></tr>";
   }
   cartTable.innerHTML += "<tr><td>Total</td><td></td><td></td><td>" + total + "</td></tr>";
@@ -88,7 +89,7 @@ function generateVerificationCode() {
     // Generar un código de verificación al azar
     var code = "";
     var possible = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789";
-    for (var i = 0; i < 6; i++) {
+    for (var i = 0; i < 6; i++) { // será de 6 caracteres
         code += possible.charAt(Math.floor(Math.random() * possible.length));
     }
     return code;

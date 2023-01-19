@@ -1,6 +1,14 @@
+body{
+  background: url(../Images/bg.jpg) no-repeat center top;
+  height: 500px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 table {
     width: 100%;
     border-collapse: collapse;
+    
   }
   
   th, td {
