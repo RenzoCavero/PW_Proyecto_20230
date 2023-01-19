@@ -1,0 +1,57 @@
+body {
+    margin: 0; /*Margen hacia los 4 lados*/
+    padding: 0; /*Espacio entre el contenido y su borde*/
+    background: url(../Images/bg.jpg) no-repeat center top;
+    background-size: cover;/*Tamaño mas pequeño para cubrir el container*/
+    font-family: sans-serif;
+    height: 100vh;/*vh es altura del dispositivo, en este caso 100%*/
+  }
+button {
+    width: 10%;
+    height: 20%;
+    margin: 5ppx;
+}
+img{
+    height: 100%;
+    width: 100%;
+}
+h3{
+    font-size: 15px;
+    border-radius: 10px;
+    background-color: orange;
+    color: white;
+    font-weight: bold;
+}
+h1{
+    text-align: center;
+    color: white;
+    font-weight: bold;
+    background-color: orange;
+    margin-top: 20px;
+    margin-left: 90px;
+    margin-right: 90px;
+    border-radius: 5px;
+    border-color: whitesmoke;
+    border-style: solid;
+}
+#listaComidas{
+    text-align: center;
+    margin-bottom: 20px;
+}
+#Restaurante{
+    text-align: center;
+}
+#Restaurante button{
+    margin-bottom: 15px;
+}
+h2{
+    font-size: 15px;
+    border-radius: 1px;
+    color: black;
+    font-weight: bold;
+}
+#cerrado1, #cerrado2{
+    background-color: gray;
+    border-color: black;
+    border-style: solid;
+}
