@@ -1,0 +1,28 @@
+body {
+    margin: 0; /*Margen hacia los 4 lados*/
+    padding: 0; /*Espacio entre el contenido y su borde*/
+    background: url(../Images/bg.jpg) center top;
+    background-size: cover;/*Tamaño mas pequeño para cubrir el container*/
+    font-family: sans-serif;
+    height: 100vh;/*vh es altura del dispositivo, en este caso 100%*/
+}
+
+button {
+    width: 95%;
+    height: 95%;
+    margin: 5px;
+}
+h1{
+    font-family: fantasy;
+    text-align: left;
+    background-color: whitesmoke;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 10px;
+    border-radius: 10px;
+    padding-left: 10px;
+}
+img{
+    height: 100%;
+    width: 100%;
+}
