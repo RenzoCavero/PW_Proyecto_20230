@@ -1,0 +1,62 @@
+body{
+
+    background-image: url(/Imagenes/pizza.jpg);
+    background-size: 90%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+
+    font-family: Roboto;
+
+}
+header.cabeceraMain{
+    text-align: center;
+
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    
+}
+a.refs{
+
+    padding: 30px;
+
+}
+
+
+table.table{
+    color:white;
+    margin-left: 50px;
+    margin-top: 30px;
+    
+}
+
+div.cat{
+
+    margin-left: 400px;
+    margin-right: 600px;
+
+}
+
+div.div2{
+
+    text-align: center;
+    background-color:transparent;
+    color:white;
+    margin-left: 400px;
+    margin-right: 600px;
+    margin-top: 20px;
+
+}
+label.dish1{
+
+    padding-right: 30px;
+}
+
+button.but1{
+
+    margin-left: 10px;
+
+}
+

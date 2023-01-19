@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Client orders</title>
+
+    <link rel="stylesheet" href="/bootstrap.css" />
+    <link rel="stylesheet" href="/orders.css" />
+</head>
+<body>
+    <header class="cabeceraMain" style="background-color: orange;" padding-left="15px" >
+
+        <nav>
+            <a class= "refs" href="restauranteStart.html" style="color:white">Start</a>
+            <a class= "refs" href="categories.html" style="color:white">Categories</a>
+            <a class= "refs" href="register.html" style="color:white">Register</a>
+            <a class= "refs" href="/orders.html" style="color:white">Orders</a>
+
+        </nav>
+
+    </header>
+
+    <h1 class="cab">Restaurant Orders</h1>
+    <table>
+      <tr>
+        <th scope="col">Order Number</th>
+        <th scope="col">Date</th>
+        <th scope="col">Client Name</th>
+        <th scope="col">Items</th>
+        <th scope="col">State</th>
+        <th scope="col">Total</th>
+      </tr>
+      <tr>
+        <td>001</td>
+        <td>2023-01-01</td>
+        <td>Esteban Gonzales</td>
+        <td>Cheese hamburger, Green noodles</td>
+        <td>In preparation <button onclick="changeState(this)">Complete</button>
+        <td>S/.51.00</td>
+      </tr>
+      <tr>
+        <td>002</td>
+        <td>2023-01-01</td>
+        <td>María Almenara</td>
+        <td>Hamburger, French fries, Soda</td>
+        <td>In preparation <button onclick="changeState(this)">Complete</button>
+        <td>S/.46.0</td>
+      </tr>
+      <tr>
+        <td>003</td>
+        <td>2023-01-01</td>
+        <td>John Smith</td>
+        <td>Pizza, Salad, Water</td>
+        <td>In preparation <button onclick="changeState(this)">Complete</button>
+        <td>S/.35.00</td>
+      </tr>
+
+      <tr>
+        <td>004</td>
+        <td>2023-01-01</td>
+        <td>Jane Johnson</td>
+        <td>Chicken and rice, Beans, Bread</td>
+        <td>In preparation <button onclick="changeState(this)">Complete</button>
+        <td>S/.46.90</td>
+      </tr>
+      <tr>
+        <td>005</td>
+        <td>2023-01-01</td>
+        <td>Bob Williams</td>
+        <td>Sushi, Edamame, Green tea</td>
+        <td>In preparation <button onclick="changeState(this)">Complete</button>
+        <td>S/.40.60</td>
+      </tr>
+
+      <tr>
+        <td>006</td>
+        <td>2023-01-01</td>
+        <td>Emily Brown</td>
+        <td>Spaghetti, Green salad, Bread</td>
+        <td>In preparation <button onclick="changeState(this)">Complete</button>
+        <td>S/.56.30</td>
+      </tr>
+
+      <tr>
+        <td>007</td>
+        <td>2023-01-01</td>
+        <td>Michael Garcia</td>
+        <td>Beef tacos, Beans, Beer</td>
+        <td>In preparation <button onclick="changeState(this)">Complete</button>
+        <td>S/.66.10</td>
+      </tr>
+
+      <tr>
+        <td>008</td>
+        <td>2023-01-01</td>
+        <td>Sarah Miller</td>
+        <td>Steak, Mashed potatoes, Red wine</td>
+        <td>In preparation <button onclick="changeState(this)">Complete</button>
+        <td>S/.44.50</td>
+      </tr>
+
+      <tr>
+        <td>009</td>
+        <td>2023-01-01</td>
+        <td>David Davis</td>
+        <td>Lasagna, Salad, Herbal tea</td>
+        <td>In preparation <button onclick="changeState(this)">Complete</button>
+        <td>S/.55.00</td>
+      </tr>
+      <tr>
+        <td>010</td>
+        <td>2023-01-01</td>
+        <td>Jessica Rodriguez</td>
+        <td>Vegan Pizza, Salad, Water</td>
+        <td>In preparation <button onclick="changeState(this)">Complete</button>
+        <td>S/.32.20</td>
+      </tr>
+    </table>
+
+    <script>
+      function changeState(button) {
+        button.parentNode.innerHTML = "Completed";
+        // access the parent element of the HTML button element and retrieve
+        // the inner HTML content within that parent element.
+      }
+      </script>
+
+    <br>
+    <br>
+  </body>
+</html>
