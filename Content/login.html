@@ -13,18 +13,19 @@
     <div class="LoginBox">
         <img class="logo" src="\Images\logo.jpg" alt="LogoLogin">
         <h1>Login Here</h1>
-        <form>
+        <form action = "index.html" method="POST">
             <!--Username-->
             <label for="username">Username</label>
             <input type="text" placeholder="Enter Username">
             <!--Password-->
             <label for="password">Password</label>
             <input type="password" placeholder="Enter Password">
+            
+            <input type="button" value="Log In" onclick="window.location.href='index.html'"/>
 
-            <input type="submit" value="Log In">
-
+            <!--<input type="submit" value="Log In"/>-->
             <a href="forgot_pw.html">Lost your password?</a><br>
-            <a href="#">Don´t have an account?</a>
+            <a href="register.html">Don´t have an account?</a>
         </form>
     </div>
 </body>

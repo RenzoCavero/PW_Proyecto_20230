@@ -60,7 +60,7 @@ body {
     font-size: 15px;/*Placeholder size*/
   }
   
-  .LoginBox input[type="submit"] {
+  .LoginBox input[type="button"] {
     border: none;
     outline: none;
     height: 40px;
@@ -70,7 +70,7 @@ body {
     border-radius: 20px;
   }
   
-  .LoginBox input[type="submit"]:hover {
+  .LoginBox input[type="button"]:hover {
     cursor: pointer;
     background: orangered ;
   }

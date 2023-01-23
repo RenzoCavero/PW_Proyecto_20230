@@ -1,6 +1,6 @@
 body{
 
-    background-image: url(/Imagenes/pizza.jpg);
+    background-image: url(/Carpeta\ Restaurante\ Web/Imagenes/pizza.jpg);
     background-size: 90%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -11,13 +11,12 @@ body{
 }
 header.cabeceraMain{
     text-align: center;
-
     padding-left: 15px;
     padding-right: 15px;
     padding-top: 10px;
     padding-bottom: 10px;
-    
 }
+
 a.refs{
 
     padding: 30px;
@@ -35,7 +34,7 @@ table.table{
 
 div.cat{
 
-    min-width: ;
+    min-width: 0;
 
 }
 

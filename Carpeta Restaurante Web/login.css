@@ -3,7 +3,7 @@ body{
     margin-top: 100px; /*Con esta propiedad muevo la caja div
     el margen con el techo se mide y va para abajo*/
 
-    background-image: url(/Imagenes/pizza.jpg);
+    background-image: url(/Carpeta\Restaurante\Web/Imagenes/pizza.jpg);
     background-size: 90%;
     background-repeat: no-repeat;
     background-size: cover;
@@ -42,7 +42,7 @@ h1.initialPhrase{
 h2.h2login{
 
     color: white;
-    padding-bottom: ;
+    padding-bottom: 0;
 }
 p.p1{
 
